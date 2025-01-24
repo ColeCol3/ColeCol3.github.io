@@ -44,11 +44,14 @@
             background-color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 10px 0;
+        .image-container {
+            display: flex; /* Display images side by side */
+            justify-content: start; /* Align images to the left */
+            gap: 10px; /* Add space between the images */
+        }
+        .profile-pic {
+            width: 150px; /* Set image width */
+            height: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
@@ -63,12 +66,16 @@
     </nav>
     <main class="container">
         <h2>About Me</h2>
-        <img src="my_image.jpg" alt="my Picture" style="width: 250px; height: auto;">
+        <!-- Image container to hold both images side by side -->
+        <div class="image-container">
+            <img src="my_image.jpg" alt="Your Picture" class="profile-pic">
+            <img src="new_image.jpg" alt="Second Picture" class="profile-pic">
+        </div>
         <p><strong>Name:</strong> Cole Dalton</p>
         <p><strong>Major:</strong> Economics/Accounting</p>
         <p><strong>Interests:</strong> I am interested in things like hiking, traveling, and computers. I also like listening to music. </p>
-        <p><strong>What I do for fun:</strong> I like to hangout with friends, play video games, and take my dogs for long walks.</p>
-        <h3>Here is a video about scratch</h3>
+        <p><strong>What I do for fun:</strong> I like to hang out with friends, play video games, and take my dogs for long walks.</p>
+        <h3>Here is a video about Scratch</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/jXUZaf5D12A?si=YFCZMd--mnZnkjDs" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
     </main>
 </body>
